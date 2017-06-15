@@ -1,0 +1,37 @@
+.vitrina-item-small-sidebar {
+    padding: 16px 12px 11px 12px;
+    border-left: 1px solid $border-grey;
+    border-right: 1px solid $border-grey;
+    box-shadow: 0 1px 0 0 #e1e7ec;
+    @include clearfix;
+    &:last-child {
+        border-radius: 0 0 10px 10px;
+        box-shadow: $gray-3line-shadow;
+    }
+    &__img {
+        border-radius: 3px;
+        display: block;
+    }
+    &__title {
+        display: inline-block;
+        margin-bottom: 4px;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        color: $dark-grey-text-color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__btn+&__btn {
+        margin-left: 10px;
+    }
+    &__left {
+        float: left;
+    }
+    &__right {
+        float: right;
+        line-height: 10px;
+    }
+}

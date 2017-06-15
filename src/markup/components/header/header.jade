@@ -1,0 +1,16 @@
+include ../icons/icons
+
+mixin header(data)
+    +b.HEADER.header()&attributes(attributes)
+        block
+        .container
+            +e.wrap
+                +e.A(href="index.html").logo-wrap
+                    +e.IMG.logo-img(src="static/img/content/logo.png")
+                +e.NAV.nav
+                    +e.nav-item
+                        a(href="#") Каталог игр
+                    +e.nav-item
+                        a(href="#") Новости
+                    +e.nav-item
+                        a(href="#") Видео

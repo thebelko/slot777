@@ -1,0 +1,38 @@
+mixin block-news-preview(data)
+    +b.block-news
+        +e.title Новости
+        +e.top-wrap
+            - for(var i=0; i < 3; i++)
+                +b.small-news-preview
+                    +e.A(href="#").img-wrap
+                        +e.IMG.img(src="static/img/content/new-preview-big-img.jpg")
+                    +e.A(href="#").title 3 способа получить 1 531 800 рублей за 5 минут
+                    +e.date
+                        SPAN 22.01.2015
+        +e.bottom-wrap
+            - for(var i=0; i < 6; i++)
+                +b.big-news-preview
+                    +e.A(href="#").img-wrap
+                        +e.IMG.img(src="static/img/content/new-preview-small-img.jpg")
+                    +e.content-wrap
+                        +e.A(href="#").title Известны победители лотереи "Слот Святого Валентина»
+                        +e.text Команда казино Вулкан от всей души поздравляет всех дам с их замечательным праздником весны и желает...
+                        +e.date
+                            SPAN 22.01.2015
+
+
+mixin block-news-preview-only-with-text(data)
+    +b.block-news_mb
+        +e.title Похожие новости
+        +e.bottom-wrap
+            - for(var i=0; i < 6; i++)
+                +b.big-news-preview
+                    +e.A(href="#").img-wrap
+                        +e.IMG.img(src="static/img/content/new-preview-small-img.jpg")
+                    +e.content-wrap
+                        +e.A(href="#").title Известны победители лотереи "Слот Святого Валентина»
+                        +e.text Команда казино Вулкан от всей души поздравляет всех дам с их замечательным праздником весны и желает...
+                        +e.date
+                            SPAN 22.01.2015
+        +b.bottom-wrap
+            +b.A(href="#").btn-orange Все новости

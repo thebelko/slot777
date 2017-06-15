@@ -1,0 +1,9 @@
+mixin menu-left(data)
+    +b.SECTION.menu-left
+        - var menuItemText = ["Игровые автоматы онлайн", "Microgaming", "Игровые автоматы бесплатно", "Net-entertaintment", "Рулетки", "Игровые автоматы на деньги", "Азартные игровые автоматы", "Casino-x.com", "FAQ", "Игровые автоматы 777", "Max Casino - отзывы", "Вулкан игровые автоматы", "Интернет казино Jackpot", "Мега Джек", "Как пополнить и снять", "Гейминатор", "Отзывы", "Игрософт", "Обзор casino-vulcan.com", "Статьи", "Советские игровые автоматы", "Советы игрокам"];
+        +e.UL.list
+            for name in menuItemText
+                +e.LI.list-item
+                    +e.A(href="#").list-link= name
+
+

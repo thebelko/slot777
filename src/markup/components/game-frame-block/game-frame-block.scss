@@ -1,0 +1,39 @@
+.game-frame {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ebedf0;
+    border-top: none;
+    box-shadow: 0 0 27px -3px rgba(0, 1, 1, 0.2), $gray-3line-shadow;
+    border-radius: 10px;
+    &__title {
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+    &__bottom {
+        padding: 16px;
+        background: #e1e1e1;
+    }
+    &__game-logo-wrap {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+    &__text {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 12px;
+        width: 230px;
+        font-size: 14px;
+        line-height: 18px;
+        p {
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+    &__btn {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}

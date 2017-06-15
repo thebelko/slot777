@@ -1,0 +1,19 @@
+.big-btn-play {
+    margin-bottom: 12px;
+    padding: 8px 0;
+    border: 1px solid #ebedf0;
+    border-top: none;
+    box-shadow: 0 0 27px -3px rgba(0, 1, 1, 0.2), $gray-3line-shadow;
+    border-radius: 10px;
+    text-align: center;
+    &__button.main-btn {
+        font-size: 18px;
+        min-width: 214px;
+        padding: 10px 0;
+        border-radius: 10px;
+        &::before, &::after {
+            height: 26px;
+            top: 8px;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+mixin pagination(data)
+    +b.pagination
+        +e.UL.list
+            +e.LI.item
+                +e.A.link_active 1
+                +e.A(href="#").link 2
+                +e.A(href="#").link 3
+                +e.A(href="#").link 4
+                +e.SPAN.link_dots ...
+                +e.A(href="#").link 6
+                +e.A(href="#").link_next.btn-orange Следующая
+

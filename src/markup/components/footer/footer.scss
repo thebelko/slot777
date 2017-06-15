@@ -1,0 +1,32 @@
+.footer {
+    padding-top: 25px;
+    margin-bottom: 20px;
+    height: 182px;
+    background-color: #2c73b1;
+    border-radius: 0 0 10px 10px;
+    &__inner {
+        text-align: center;
+    }
+    &__inner+&__inner {
+        margin-top: 25px;
+    }
+    &__link-top {
+        font-size: 16px;
+        color: #7cbbf2;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__link-top+&__link-top {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    &__text {
+        color: #bdd8ef;
+        a {
+            color: #bdd8ef;
+            text-decoration: none;
+        }
+    }
+}

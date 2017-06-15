@@ -1,0 +1,19 @@
+.vitrina-item-banner {
+    position: relative;
+    &__img-wrap {
+    }
+    &__img {
+        width: 247px;
+        height: 246px;
+        border-radius: 0 0 10px 10px;
+    }
+    &__btn-wrap {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        .main-btn {
+            padding: 4px 8px;
+        }
+    }
+}

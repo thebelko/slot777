@@ -1,0 +1,60 @@
+extends ../layouts/default
+
+include ../components/block-now-playing/block-now-playing
+include ../components/menu-left/menu-left
+include ../components/block-best-clubs/block-best-clubs
+include ../components/vitrina-item-small-stars/vitrina-item-small-stars
+include ../components/vitrina-3items-in-line/vitrina-3items-in-line
+include ../components/block-now-playing/block-now-playing
+include ../components/vitrina-item-banner/vitrina-item-banner
+include ../components/sidebar-news-list/sidebar-news-list
+include ../components/pagination/pagination
+
+
+
+block head
+    -pageSettings.title = 'Каталог игр';
+
+block content
+    .container
+        .menu-left-wrap
+            +menu-left()
+
+        .content-center
+
+            +b.vitrina-3items-in-line
+                +e.title Каталог игр
+                +e.inner
+                    - for(var i = 0; i < 15; i++)
+                        +vitrina-3items-in-line()
+                    +vitrina-3items-in-line-no-mb()
+                +pagination()
+
+
+            .text-block
+                H1 H1 Официальный игровой клуб
+                p Первый лот отошел оператору life:). Компания «Астелит» заплатит за него 3 355 400 000 грн, перебив предложение «МТС Украина» размером в 3,22 млрд грн.
+                ul.list-style-check
+                    li «Астелит» заплатит за него 3 355 400 000 грн,
+                    li «МТС Украина» размером в 3,22 млрд грн.
+                H2 H2 Официальный игровой клуб
+                ol.list-style-number
+                    li По мнениям конкурентов на тендере, компания переплатила 600 млн грн.
+                    li Это цена, которую мы были готовы заплатить. Она показывает, что   мы готовы далее инвестировать в Украину и что эта технология важна для страны»
+                    li Прокомментировал итоги аукциона Эрдал Яйла, и.о. исполнительного директора «Астелит»
+                H3 H3 Официальный игровой клуб
+                p Первый лот отошел оператору life:). Компания «Астелит» заплатит за него 3 355 400 000 грн, перебив предложение
+
+        .sidebar-right
+            +block-now-playing()
+
+            +b.vitrina-3items-in-line.popular-games
+                .popular-games__title.popular-games__title_no-shadow Игра недели
+                +vitrina-big-item()
+
+            .popular-games
+                .popular-games__title.popular-games__title_no-shadow Клуб месяца
+                +vitrina-item-banner()
+
+            +sidebar-news-list()
+

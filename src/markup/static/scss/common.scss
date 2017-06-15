@@ -1,0 +1,105 @@
+// Common styles of the project
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-width: 1085px;
+    color: $dark-grey-text-color;
+    font-family: $opensans;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1085px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.menu-left-wrap {
+    display: inline-block;
+    width: 180px;
+    margin-right: 20px;
+}
+
+.content-center {
+    display: inline-block;
+    vertical-align: top;
+    width: 586px;
+    margin-right: 20px;
+}
+
+.sidebar-right {
+    display: inline-block;
+    vertical-align: top;
+    width: 240px;
+}
+
+.block-best {
+    margin-bottom: 15px;
+}
+
+.content-inner-wrap {
+    margin-bottom: 15px;
+    @include clearfix;
+    &__left {
+        float: left;
+        display: inline-block;
+        width: 285px;
+    }
+    &__right {
+        float: right;
+        display: inline-block;
+        width: 285px;
+    }
+}
+
+.popular-games {
+    &__title {
+        position: relative;
+        z-index: 10;
+        padding: 11px 15px;
+        background-image: $orange-gradient;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 10px 10px 0 0;
+        box-shadow: $gray-3line-shadow;
+        &_no-shadow {
+            box-shadow: none;
+        }
+    }
+    .vitrina-item-small-stars:last-child {
+        border-radius: 0 0 10px 10px;
+        box-shadow: $gray-3line-shadow;
+    }
+}
+
+.text-block {
+    margin-bottom: 15px;
+    padding: 18px 20px 20px 20px;
+    border-radius: 10px;
+    border: 1px solid $border-grey;
+    border-top: none;
+    box-shadow: $gray-3line-shadow, 0 0 27px -3px rgba(0, 1, 1, 0.2);
+}
+

@@ -1,0 +1,14 @@
+mixin block-now-playing(data)
+        +b.ASIDE.block-best
+            +e.title
+                +e.title-text Сейчас играют
+            - for(var i = 0; i < 6; i++)
+                +b.vitrina-item-small-sidebar
+                    +e.left
+                        A(href="#")
+                            +e.IMG.img(src="static/img/content/now-playing.jpg")
+                    +e.right
+                        +e.A(href="#").title Fruit coctail
+                        +e.btn-wrap
+                            +b.A(href="#").main-btn_green.vitrina-item-small-sidebar__btn Играть
+                            +b.A(href="#").main-btn_grey.vitrina-item-small-sidebar__btn Демо

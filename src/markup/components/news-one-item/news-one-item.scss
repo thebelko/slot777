@@ -1,0 +1,27 @@
+.news-item {
+    margin-top: -15px;
+    margin-bottom: 12px;
+    padding: 15px;
+    border: 1px solid $border-grey;
+    border-radius: 0 0 10px 10px;
+    box-shadow: $gray-3line-shadow;
+    &__img-wrap {
+        margin-bottom: 12px;
+    }
+    &__img {
+        display: block;
+        border: 10px;
+        width: 554px;
+        height: 275px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+    }
+    &__date {
+        font-size: 12px;
+    }
+    &__text p {
+        margin: 4px 0;
+    }
+}

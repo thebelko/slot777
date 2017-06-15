@@ -1,0 +1,29 @@
+.pagination {
+    margin-bottom: 12px;
+    padding: 12px 0;
+    text-align: center;
+    border: 1px solid #e1e7ec;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    box-shadow: $gray-3line-shadow;
+    &__link {
+        display: inline-block;
+        padding: 0 6px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+        color: $color-text-orange;
+        &_active {
+            border: 2px solid $color-text-orange;
+            border-radius: 3px;
+        }
+    }
+    &__link.btn-orange {
+        padding: 2px 6px;
+        color: #fff;
+        text-transform: none;
+        &::before, &::after {
+            height: 24px;
+        }
+    }
+}

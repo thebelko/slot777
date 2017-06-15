@@ -1,0 +1,33 @@
+mixin vitrina-3items-in-line
+    +e.item
+        +e.A(href="#").img-wrap
+            +e.IMG.img(src="static/img/content/vitrina-3inline.jpg" )
+        +e.A(href="#").item-title-wrap
+            +e.SPAN.item-title Book of Ra
+        +e.btn-wrap
+            +e.A(href="#").btn_green Играть
+            +e.A(href="#").btn_grey Демо
+
+mixin vitrina-3items-in-line-no-mb
+    - for(var i = 0; i < 3; i++)
+        +e.item_no-mb
+            +e.A(href="#").img-wrap
+                +e.IMG.img(src="static/img/content/vitrina-3inline.jpg" )
+            +e.A(href="#").item-title-wrap
+                +e.SPAN.item-title Book of Ra
+            +e.btn-wrap
+                +e.A(href="#").btn_green Играть
+                +e.A(href="#").btn_grey Демо
+
+mixin vitrina-big-item
+    +e.item_big-item
+        +e.A(href="#").img-wrap
+            +e.IMG.img_big-item(src="static/img/content/vitrina-big-img.jpg" )
+        +e.A(href="#").item-title-wrap
+            +e.SPAN.item-title Book of Ra
+        +e.btn-wrap_big-item
+            +e.A(href="#").btn_green Играть
+            +e.A(href="#").btn_grey Демо
+
+
+

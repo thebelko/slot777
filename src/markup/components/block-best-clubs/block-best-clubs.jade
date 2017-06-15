@@ -1,0 +1,27 @@
+mixin block-best-clubs(number, imageClub, clubName)
+        +e.inner
+            +e.item
+                +e.DIV.number
+                    SPAN
+                        SPAN= number
+                +e.A(href="#").img-wrap
+                    +e.IMG(src="static/img/content/#{imageClub}.png").img
+                +e.DIV.content
+                    +e.DIV.rate
+                        +e.A(href="#").rate-text= clubName
+                        +e.SPAN.rate-stars
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star-half-o
+                    +e.DIV.badges
+                        +e.badges-item_bg-orange vip система
+                        +e.badges-item_bg-green турниры
+                        +e.badges-item_bg-blue лотерея
+                        +e.badges-item_bg-red cashback
+                        +e.badges-item_bg-violet дупозитный бонус
+                +e.A(href="#").btn Посетить клуб
+
+
+

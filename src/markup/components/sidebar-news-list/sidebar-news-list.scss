@@ -1,0 +1,56 @@
+.sidebar-news-item {
+    padding: 16px 12px 11px 8px;
+    border-left: 1px solid $border-grey;
+    border-right: 1px solid $border-grey;
+    box-shadow: 0 1px 0 0 #e1e7ec;
+    @include clearfix;
+    &__title {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 14px;
+        text-decoration: none;
+        color: $dark-grey-text-color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__date-wrap {
+        display: inline-block;
+        text-decoration: none;
+    }
+    &__date {
+        font-size: 12px;
+        color: #767676;
+    }
+    &__left {
+        float: left;
+    }
+    &__btn-wrap {
+        border-radius: 0 0 10px 10px;
+        box-shadow: $gray-3line-shadow;
+    }
+    &__btn {
+
+    }
+    &__right {
+        float: right;
+        width: 65%;
+        line-height: 10px;
+    }
+}
+
+.sidebar-news-btn-wrap {
+    padding: 12px 0;
+    text-align: center;
+    border: 1px solid #e1e7ec;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    box-shadow: $gray-3line-shadow;
+    &__btn {
+        color: $color-text-orange;
+        &:hover {
+            font-weight: 700;
+        }
+    }
+}

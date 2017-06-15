@@ -1,0 +1,15 @@
+mixin sidebar-news-list(data)
+    +b.block-best
+        +e.title
+            +e.title-text Новости
+        - for(var i = 0; i < 6; i++)
+            +b.sidebar-news-item
+                +e.left
+                    A(href="#")
+                        +e.IMG.img(src="static/img/content/img-news-list.jpg")
+                +e.right
+                    +e.A(href="#").title Известны победители лотереи Слот Святого...
+                    +e.A(href="#").date-wrap
+                        +e.SPAN.date 22.07.2016
+        .sidebar-news-btn-wrap
+            A(href="#").sidebar-news-btn-wrap__btn Все новости
